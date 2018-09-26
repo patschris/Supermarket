@@ -103,10 +103,10 @@ int main(void) {
 		printf("\nCashier's data %d\n", i+1);
 		printf("Customers served: %d\n",TamiasGetArithmosPelatwn(pinakas_tamion[i]));
 		printf("Customers didn't served: %d\n",OuraGetSize(pinakas_ouron[i]));
-		printf("Total amount of customers entered the supermarket: %d \n",OuraGetCountIn(pinakas_ouron[i]));
-		printf("Total amount of customers exited the supermarket: n %d \n",OuraGetCountOut(pinakas_ouron[i]));
+		printf("Total amount of customers entered the queue: %d\n",OuraGetCountIn(pinakas_ouron[i]));
+		printf("Total amount of customers exited the queue: n %d\n",OuraGetCountOut(pinakas_ouron[i]));
 		printf("Cashier was inactive for %d units of time\n", TamiasGetInactiveXronos(pinakas_tamion[i]));
-		printf("Average waiting time  was %4.2f units of time\n\n", pinakas_mesosXronos[i]);
+		printf("Average waiting time was %4.2f units of time\n\n", pinakas_mesosXronos[i]);
 		assert(OuraGetCountIn(pinakas_ouron[i])-OuraGetCountOut(pinakas_ouron[i]) == OuraGetSize(pinakas_ouron[i]));
 	}
     printf("The supermarket was open for %d units of time after the closing hour\n",paratasi);
